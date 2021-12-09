@@ -27,6 +27,8 @@
   width: 850px;
   max-width: 850px;
   height: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bg .todolist .list_box {
@@ -91,6 +93,7 @@
   justify-content:space-between;
   align-items: center;
   margin-bottom: 15px;
+  height: 40px;
 }
 
 .bg .todolist .list_box .body .content img {
@@ -103,6 +106,10 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+}
+
+.bg .todolist .list_box .body .content .check ul {
+  height: 40px;
 }
 
 .bg .todolist .list_box .body .content .check ul li{
@@ -123,6 +130,13 @@
 .bg .todolist .list_box .body .content .check .check_img img{
   justify-content: center;
   align-items: center;
+}
+
+.bg .todolist .list_box .body .content .check ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 360px;
+  white-space: nowrap;
 }
 
 .bg .todolist .list_box .body .content .modify {
@@ -151,4 +165,52 @@
   font-size: 20px;
   outline: none;
   font-weight: bold;
+}
+
+.bg .todolist .pagination { 
+  display: flex; justify-content: center; margin-bottom: 30px; 
+  align-items: center;
+} 
+
+.bg .todolist ul { 
+  list-style: none; padding: 0; 
+}
+
+.bg .todolist ul.pagination li { 
+  display: inline-block; width: 30px; height: 30px; display: flex; justify-content: center; 
+  align-items: center; font-size: 16px; font-weight: 700;
+} 
+
+.bg .todolist ul.pagination li:first-child{ 
+  display: none;
+} 
+
+.bg .todolist ul.pagination li:last-child{ 
+  display: none;
+} 
+
+.bg .todolist ul.pagination li span { 
+  text-decoration: none; color: #891796; font-size: 1rem; 
+} 
+
+.bg .todolist ul.pagination li:nth-of-type(8) a{
+  font-size: 24px; line-height: 30px;
+  align-items: center; padding-bottom: 5px;
+}
+
+.bg .todolist ul.pagination li.active span { 
+  color: #891796; 
+} 
+
+ul.pagination li a:hover, ul.pagination li a.active { 
+  color: #891796; 
+} 
+
+.bg .todolist .page-selection {
+  width: 48px; height: 30px; color: #337ab7; 
+}
+
+.bg .todolist ul.pagination .disabled a{
+  font-size: 24px; line-height: 30px;
+  align-items: center; padding-bottom: 5px;
 }
